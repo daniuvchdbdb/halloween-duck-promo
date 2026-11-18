@@ -1,0 +1,10 @@
+{
+  "duration": 4.1,
+  "maxStaticSec": 1.5,
+  "assertions": [
+    { "kind": "appearsBy", "selector": "#s4-outgoing", "bySec": 0.2 },
+    { "kind": "appearsBy", "selector": ".idea:first-child", "bySec": 1.3 },
+    { "kind": "before", "a": "#s4-outgoing", "b": ".idea:first-child" },
+    { "kind": "keepsMoving", "withinSelector": "#s4-main" }
+  ]
+}

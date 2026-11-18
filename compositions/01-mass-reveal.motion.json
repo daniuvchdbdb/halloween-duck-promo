@@ -1,0 +1,9 @@
+{
+  "duration": 3.6,
+  "maxStaticSec": 1.4,
+  "assertions": [
+    { "kind": "appearsBy", "selector": "#s1-photo", "bySec": 0.5 },
+    { "kind": "staysInFrame", "selector": "#s1-photo" },
+    { "kind": "keepsMoving", "withinSelector": "#s1-main" }
+  ]
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #160b1c; }
+      #root { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #160b1c; }
+      #root > [data-composition-src] { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-enpg" id="root" data-composition-id="main" data-start="0" data-duration="20" data-width="1920" data-height="1080" data-fps="30">
+      <div data-hf-id="hf-fu4j" id="scene-mass-reveal" data-composition-id="scene-mass-reveal" data-composition-src="compositions/01-mass-reveal.html" data-start="0" data-duration="3.6" data-track-index="1"></div>
+      <div data-hf-id="hf-gjyl" id="scene-character-cabinet" data-composition-id="scene-character-cabinet" data-composition-src="compositions/02-character-cabinet.html" data-start="3.6" data-duration="3.8" data-track-index="1"></div>
+      <div data-hf-id="hf-yc6k" id="scene-detail-rail" data-composition-id="scene-detail-rail" data-composition-src="compositions/03-detail-rail.html" data-start="7.4" data-duration="3.8" data-track-index="1"></div>
+      <div data-hf-id="hf-g2uw" id="scene-use-ideas" data-composition-id="scene-use-ideas" data-composition-src="compositions/04-use-ideas.html" data-start="11.2" data-duration="4.1" data-track-index="1"></div>
+      <div data-hf-id="hf-1kiy" id="scene-full-assortment" data-composition-id="scene-full-assortment" data-composition-src="compositions/05-full-assortment.html" data-start="15.3" data-duration="4.7" data-track-index="1"></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

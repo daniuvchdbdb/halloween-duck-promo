@@ -1,0 +1,10 @@
+{
+  "duration": 4.7,
+  "maxStaticSec": 2,
+  "assertions": [
+    { "kind": "appearsBy", "selector": ".full-photo", "bySec": 0.2 },
+    { "kind": "appearsBy", "selector": ".word:first-child", "bySec": 2 },
+    { "kind": "before", "a": ".full-photo", "b": ".word:first-child" },
+    { "kind": "keepsMoving", "withinSelector": "#s5-main" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "duration": 3.8,
+  "maxStaticSec": 1.4,
+  "assertions": [
+    { "kind": "appearsBy", "selector": ".duck-card:first-child", "bySec": 0.9 },
+    { "kind": "before", "a": ".duck-card:first-child", "b": ".tag" },
+    { "kind": "keepsMoving", "withinSelector": "#s2-main" }
+  ]
+}

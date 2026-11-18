@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><head></head>
+  <body>
+    <template>
+      <div data-hf-id="hf-ecxw" id="scene-detail-rail" data-composition-id="scene-detail-rail" data-width="1920" data-height="1080" data-duration="3.8">
+        <style>
+          #scene-detail-rail { position:absolute; inset:0; width:1920px; height:1080px; overflow:hidden; background:#160b1c; color:#fff2df; font-family:"Space Mono",monospace; }
+          #scene-detail-rail * { box-sizing:border-box; }
+          #scene-detail-rail .pool { position:absolute; right:-320px; top:-350px; width:1400px; height:1400px; border-radius:50%; background:radial-gradient(circle,rgba(255,106,0,.34),rgba(255,106,0,.1) 45%,rgba(255,106,0,0) 72%); }
+          #scene-detail-rail .rings { position:absolute; right:160px; top:180px; width:580px; height:580px; border:4px solid rgba(100,217,112,.22); border-radius:50%; box-shadow:0 0 0 38px rgba(100,217,112,.05),0 0 0 84px rgba(100,217,112,.035); }
+          #scene-detail-rail .title { position:absolute; left:90px; top:62px; z-index:8; display:flex; align-items:flex-end; gap:34px; }
+          #scene-detail-rail h2 { margin:0; width:1190px; font-family:"Archivo Black",sans-serif; font-size:82px; line-height:.92; letter-spacing:-.045em; text-transform:uppercase; }
+          #scene-detail-rail h2 span { color:#ff6a00; }
+          #scene-detail-rail .scene-no { margin-bottom:10px; color:#64d970; font-weight:700; font-size:21px; letter-spacing:.12em; }
+          #scene-detail-rail .zoom-outer { position:absolute; left:0; top:230px; width:1920px; height:760px; transform-origin:50% 50%; will-change:transform; }
+          #scene-detail-rail .zoom-inner { position:absolute; inset:0; will-change:transform; }
+          #scene-detail-rail .rail { position:absolute; left:150px; top:26px; width:1620px; height:620px; display:flex; gap:60px; align-items:center; will-change:transform; }
+          #scene-detail-rail .rail-card { position:relative; flex:0 0 500px; height:600px; overflow:hidden; border-radius:38px; background:#fff9f0; color:#24131f; box-shadow:0 34px 80px rgba(0,0,0,.42); }
+          #scene-detail-rail .rail-card img { display:block; width:100%; height:510px; object-fit:cover; background:#fff; }
+          #scene-detail-rail .label { height:90px; display:flex; align-items:center; justify-content:space-between; padding:0 32px; font-size:21px; font-weight:700; letter-spacing:.11em; }
+          #scene-detail-rail .label b { font-family:"Archivo Black",sans-serif; font-size:34px; font-weight:400; letter-spacing:-.03em; }
+          #scene-detail-rail .hero-aura { position:absolute; inset:-8px; border:7px solid #ff6a00; border-radius:42px; opacity:0; pointer-events:none; z-index:5; }
+          #scene-detail-rail .pointer { position:absolute; left:934px; bottom:58px; width:52px; height:52px; border-radius:50%; background:#ff6a00; border:8px solid #fff2df; z-index:8; }
+          #scene-detail-rail .pointer::after { content:""; position:absolute; left:18px; top:-52px; width:5px; height:48px; background:#fff2df; }
+          #scene-detail-rail .progress { position:absolute; left:90px; right:90px; bottom:40px; height:4px; background:rgba(255,242,223,.16); }
+          #scene-detail-rail .progress span { display:block; width:60%; height:100%; background:#64d970; transform-origin:0 50%; }
+        </style>
+        <section data-hf-id="hf-j7in" id="s3-main" class="clip" data-start="0" data-duration="3.8" data-track-index="0" style="position:absolute;inset:0;overflow:hidden;">
+          <div data-hf-id="hf-fd1m" class="pool"></div><div data-hf-id="hf-e1l5" class="rings"></div>
+          <div data-hf-id="hf-j8jm" class="title"><h2 data-hf-id="hf-m04j">Every duck. <span data-hf-id="hf-6gwu">A different disguise.</span></h2><div data-hf-id="hf-vzgn" class="scene-no">03 / 05</div></div>
+          <div data-hf-id="hf-enw9" class="zoom-outer" id="s3-outer"><div data-hf-id="hf-bbo5" class="zoom-inner" id="s3-inner"><div data-hf-id="hf-h4fx" class="rail" id="s3-rail">
+            <article data-hf-id="hf-9en8" class="rail-card"><img data-hf-id="hf-u8q6" src="assets/duck-crops/hood.png" alt="Hooded Halloween duck"><div data-hf-id="hf-x0aa" class="label"><b data-hf-id="hf-j2z7">HOOD</b><span data-hf-id="hf-kukh">LOOK 01</span></div></article>
+            <article data-hf-id="hf-bzto" class="rail-card"><img data-hf-id="hf-935x" src="assets/duck-crops/mummy.png" alt="Mummy Halloween duck"><div data-hf-id="hf-wwom" class="label"><b data-hf-id="hf-sfy8">MUMMY</b><span data-hf-id="hf-m1hk">LOOK 02</span></div></article>
+            <article data-hf-id="hf-e55x" class="rail-card" id="s3-hero"><img data-hf-id="hf-3gq1" src="assets/duck-crops/ghost.png" alt="Ghost Halloween duck"><div data-hf-id="hf-bc7s" class="hero-aura" id="s3-aura"></div><div data-hf-id="hf-xazn" class="label"><b data-hf-id="hf-4u8g">GHOST</b><span data-hf-id="hf-s3m9">FAVORITE</span></div></article>
+          </div></div></div>
+          <div data-hf-id="hf-poi3" class="pointer"></div>
+          <div data-hf-id="hf-31j5" class="progress"><span data-hf-id="hf-95zk" id="s3-progress"></span></div>
+        </section>
+        <script>
+          (function () {
+            const tl=gsap.timeline({paused:true,defaults:{ease:"power3.out"}});
+            tl.fromTo("#scene-detail-rail .title",{x:-72,opacity:0},{x:0,opacity:1,duration:.5,ease:"power3.out"},.12);
+            tl.fromTo("#s3-rail",{x:1300,y:46,rotation:.8,opacity:.72},{x:160,y:-4,rotation:-.18,opacity:1,duration:.42,ease:"power3.in"},.08);
+            tl.to("#s3-rail",{x:-35,y:0,rotation:0,duration:.16,ease:"none"},.50);
+            tl.to("#s3-rail",{x:0,duration:.52,ease:"power4.out"},.66);
+            tl.fromTo("#scene-detail-rail .pointer",{scale:0,opacity:0},{scale:1,opacity:1,duration:.38,ease:"back.out(1.35)"},1.04);
+            tl.to("#s3-outer",{scale:1.12,duration:1.12,ease:"power3.inOut"},1.52);
+            tl.to("#s3-inner",{x:-560,duration:1.12,ease:"power3.inOut"},1.52);
+            tl.fromTo("#s3-aura",{opacity:0,scale:.92},{opacity:.9,scale:1,duration:.62,ease:"power2.out"},2.18);
+            tl.fromTo("#s3-progress",{scaleX:0},{scaleX:1,duration:1.45,ease:"power3.out"},.30);
+            tl.to("#scene-detail-rail .rings",{rotation:10,duration:3.8,ease:"none"},0);
+            window.__timelines=window.__timelines||{};
+            window.__timelines["scene-detail-rail"]=tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>
